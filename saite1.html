@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<title>Skroderdienas Silmačos | 1902</title>
+
+<style>
+@import url('https://googleapis.com');
+
+body {
+    margin: 0;
+    font-family: 'Crimson Pro', serif;
+    background-color: #e8dbc5;
+    background-image: url("https://transparenttextures.com");
+    color: #2c1e16;
+    line-height: 1.6;
+}
+
+.ornament-bar {
+    height: 12px;
+    background: #8b0000;
+    border-bottom: 2px solid #5a0000;
+}
+
+header {
+    background: #fdf5e6;
+    border-bottom: 3px double #8b0000;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    margin: 0;
+    color: #4a3728;
+    text-transform: uppercase;
+}
+
+nav {
+    background: #4a3728;
+    padding: 12px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+nav a {
+    color: #e8dbc5;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+nav a:hover {
+    color: #d97b66;
+}
+
+.container {
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 0 20px;
+    min-height: 400px;
+}
+
+.page {
+    display: none;
+    background: white;
+    padding: 40px;
+    border: 1px solid #d2b48c;
+    box-shadow: 8px 8px 0px #bc9a70;
+}
+
+.active {
+    display: block;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    font-size: 2rem;
+    color: #8b0000;
+    border-bottom: 1px solid #d2b48c;
+    padding-bottom: 15px;
+    margin-top: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 8px 0;
+    border-bottom: 1px dashed #e8dbc5;
+}
+
+ul li::before {
+    content: "◈ ";
+    color: #8b0000;
+    margin-right: 10px;
+}
+
+footer {
+    background: #2c1e16;
+    color: #e8dbc5;
+    text-align: center;
+    padding: 25px;
+    margin-top: 60px;
+    border-top: 4px solid #8b0000;
+}
+
+.quote {
+    font-style: italic;
+    border-left: 3px solid #8b0000;
+    padding-left: 20px;
+    margin: 20px 0;
+    color: #4a3728;
+}
+</style>
+</head>
+
+<body>
+
+<div class="ornament-bar"></div>
+
+<header>
+    <h1>Skroderdienas Silmačos</h1>
+    <p>Rūdolfs Blaumanis</p>
+</header>
+
+<nav>
+    <a onclick="showPage('sakums')">Sākums</a>
+    <a onclick="showPage('biografija')">Biogrāfija</a>
+    <a onclick="showPage('vide')">Vide</a>
+    <a onclick="showPage('varoni')">Varoņi</a>
+    <a onclick="showPage('atzinas')">Atziņas</a>
+    <a onclick="showPage('kultura')">Kultūra</a>
+    <a onclick="showPage('atsauces')">Atsauces</a>
+</nav>
+
+<div class="container">
+
+    <!-- SĀKUMS -->
+    <div id="sakums" class="page active">
+        <h2>Sākums</h2>
+        <p style="text-align: center; font-size: 1.2rem;">
+            
+        </p>
+    </div>
+
+    <!-- BIOGRĀFIJA -->
+    <div id="biografija" class="page">
+        <h2>Rūdolfa Blaumaņa biogrāfija</h2>
+        <p>Rūdolfs Blaumanis (1863–1908) bija izcils latviešu rakstnieks, dramaturgs un žurnālists. Viņa darbi izceļas ar dziļu psiholoģisko tēlojumu un tautas dzīves pazīšanu.</p>
+        <p>Dzimis Ērgļu pagasta "Braku" mājās, kas vēlāk kalpoja par iedvesmu daudziem viņa darbiem. Blaumanis ir autors tādām nozīmīgām lugām kā "Indrāni", "Ugunī" un stāstam "Nāves ēnā".</p>
+    </div>
+
+    <!-- VIDE -->
+    <div id="vide" class="page">
+        <h2>Vide</h2>
+        <p>Lugas darbība norisinās 19. gadsimta beigās tipiskā latviešu lauku sētā – "Silmačos". Darbības laiks ir Jāņu priekšvakars un paši Jāņi.</p>
+        <p>Videi ir liela nozīme atmosfēras radīšanā: siena pļauja, mājas uzpošana un gatavošanās gada īsākajai naktij rada fonu visiem lugas notikumiem.</p>
+    </div>
+
+    <!-- VAROŅI -->
+    <div id="varoni" class="page">
+        <h2>Varoņu raksturojums</h2>
+        <ul>
+            <li><strong>Antonija:</strong> Silmaču saimniece, kurā cīnās lepnums ar ilgām pēc personīgās laimes.</li>
+            <li><strong>Aleksis:</strong> Jauns vīrietis, kurš ir uzticīgs saviem solījumiem, bet kura sirds pieder citai.</li>
+            <li><strong>Elīna:</strong> Klusa, strādīga un uzticīga meitene, kura pārstāv patiesas jūtas.</li>
+            <li><strong>Pindaks un Pindacīša:</strong> Kaimiņi, kas ienes lugā komiskus un sadzīviskus elementus.</li>
+        </ul>
+    </div>
+
+    <!-- ATZIŅAS -->
+    <div id="atzinas" class="page">
+        <h2>Atziņas</h2>
+        <div class="quote">
+            "Mīlestība ir stiprāka par aizspriedumiem un mantiskām interesēm."
+        </div>
+        <p>Luga atgādina, ka pat vislielākie strīdi un pārpratumi ir atrisināmi ar humoru un labu gribu. Tā parāda, cik svarīgi ir saglabāt tautas tradīcijas un vienotību svētku brīžos.</p>
+    </div>
+
+    <!-- KULTŪRA -->
+    <div id="kultura" class="page">
+        <h2>Kultūras nozīme</h2>
+        <p>"Skroderdienas Silmačos" ir visvairāk iestudētā luga Latvijas teātru vēsturē. Tā ir kļuvusi par tradicionālu Jāņu laika pavadoni, ko iedzīvotāji zina gandrīz no galvas.</p>
+        <p>Luga ir piedzīvojusi neskaitāmas interpretācijas gan profesionālajos teātros, gan pašdarbības kolektīvos visā Latvijā.</p>
+    </div>
+
+    <!-- ATSAUCES -->
+    <div id="atsauces" class="page">
+        <h2>Atsauces un avoti</h2>
+        <ul>
+            <li>Latvijas Nacionālā enciklopēdija</li>
+            <li>Rūdolfa Blaumaņa memoriālais muzejs "Braki"</li>
+            <li>Portāls literatura.lv</li>
+            <li>Latvijas kultūras kanons</li>
+        </ul>
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 Skolas projekts | Tautas mantojums</p>
+</footer>
+
+<script>
+function showPage(id){
+    document.querySelectorAll(".page").forEach(page => {
+        page.classList.remove("active");
+    });
+    document.getElementById(id).classList.add("active");
+    window.scrollTo(0, 0);
+}
+</script>
+
+</body>
+</html>
